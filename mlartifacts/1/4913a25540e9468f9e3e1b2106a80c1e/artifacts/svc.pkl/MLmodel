@@ -1,0 +1,127 @@
+artifact_path: svc.pkl
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.12.1
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.2.2
+mlflow_version: 2.17.0
+model_size_bytes: 7282999
+model_uuid: 3c129f4dd6ab40eeb1663529f11a7092
+run_id: 4913a25540e9468f9e3e1b2106a80c1e
+saved_input_example_info:
+  artifact_path: input_example.json
+  pandas_orient: split
+  serving_input_path: serving_input_example.json
+  type: dataframe
+signature:
+  inputs: '[{"type": "long", "name": "itching", "required": true}, {"type": "long",
+    "name": "skin_rash", "required": true}, {"type": "long", "name": "nodal_skin_eruptions",
+    "required": true}, {"type": "long", "name": "continuous_sneezing", "required":
+    true}, {"type": "long", "name": "shivering", "required": true}, {"type": "long",
+    "name": "chills", "required": true}, {"type": "long", "name": "joint_pain", "required":
+    true}, {"type": "long", "name": "stomach_pain", "required": true}, {"type": "long",
+    "name": "acidity", "required": true}, {"type": "long", "name": "ulcers_on_tongue",
+    "required": true}, {"type": "long", "name": "muscle_wasting", "required": true},
+    {"type": "long", "name": "vomiting", "required": true}, {"type": "long", "name":
+    "burning_micturition", "required": true}, {"type": "long", "name": "spotting_
+    urination", "required": true}, {"type": "long", "name": "fatigue", "required":
+    true}, {"type": "long", "name": "weight_gain", "required": true}, {"type": "long",
+    "name": "anxiety", "required": true}, {"type": "long", "name": "cold_hands_and_feets",
+    "required": true}, {"type": "long", "name": "mood_swings", "required": true},
+    {"type": "long", "name": "weight_loss", "required": true}, {"type": "long", "name":
+    "restlessness", "required": true}, {"type": "long", "name": "lethargy", "required":
+    true}, {"type": "long", "name": "patches_in_throat", "required": true}, {"type":
+    "long", "name": "irregular_sugar_level", "required": true}, {"type": "long", "name":
+    "cough", "required": true}, {"type": "long", "name": "high_fever", "required":
+    true}, {"type": "long", "name": "sunken_eyes", "required": true}, {"type": "long",
+    "name": "breathlessness", "required": true}, {"type": "long", "name": "sweating",
+    "required": true}, {"type": "long", "name": "dehydration", "required": true},
+    {"type": "long", "name": "indigestion", "required": true}, {"type": "long", "name":
+    "headache", "required": true}, {"type": "long", "name": "yellowish_skin", "required":
+    true}, {"type": "long", "name": "dark_urine", "required": true}, {"type": "long",
+    "name": "nausea", "required": true}, {"type": "long", "name": "loss_of_appetite",
+    "required": true}, {"type": "long", "name": "pain_behind_the_eyes", "required":
+    true}, {"type": "long", "name": "back_pain", "required": true}, {"type": "long",
+    "name": "constipation", "required": true}, {"type": "long", "name": "abdominal_pain",
+    "required": true}, {"type": "long", "name": "diarrhoea", "required": true}, {"type":
+    "long", "name": "mild_fever", "required": true}, {"type": "long", "name": "yellow_urine",
+    "required": true}, {"type": "long", "name": "yellowing_of_eyes", "required": true},
+    {"type": "long", "name": "acute_liver_failure", "required": true}, {"type": "long",
+    "name": "fluid_overload", "required": true}, {"type": "long", "name": "swelling_of_stomach",
+    "required": true}, {"type": "long", "name": "swelled_lymph_nodes", "required":
+    true}, {"type": "long", "name": "malaise", "required": true}, {"type": "long",
+    "name": "blurred_and_distorted_vision", "required": true}, {"type": "long", "name":
+    "phlegm", "required": true}, {"type": "long", "name": "throat_irritation", "required":
+    true}, {"type": "long", "name": "redness_of_eyes", "required": true}, {"type":
+    "long", "name": "sinus_pressure", "required": true}, {"type": "long", "name":
+    "runny_nose", "required": true}, {"type": "long", "name": "congestion", "required":
+    true}, {"type": "long", "name": "chest_pain", "required": true}, {"type": "long",
+    "name": "weakness_in_limbs", "required": true}, {"type": "long", "name": "fast_heart_rate",
+    "required": true}, {"type": "long", "name": "pain_during_bowel_movements", "required":
+    true}, {"type": "long", "name": "pain_in_anal_region", "required": true}, {"type":
+    "long", "name": "bloody_stool", "required": true}, {"type": "long", "name": "irritation_in_anus",
+    "required": true}, {"type": "long", "name": "neck_pain", "required": true}, {"type":
+    "long", "name": "dizziness", "required": true}, {"type": "long", "name": "cramps",
+    "required": true}, {"type": "long", "name": "bruising", "required": true}, {"type":
+    "long", "name": "obesity", "required": true}, {"type": "long", "name": "swollen_legs",
+    "required": true}, {"type": "long", "name": "swollen_blood_vessels", "required":
+    true}, {"type": "long", "name": "puffy_face_and_eyes", "required": true}, {"type":
+    "long", "name": "enlarged_thyroid", "required": true}, {"type": "long", "name":
+    "brittle_nails", "required": true}, {"type": "long", "name": "swollen_extremeties",
+    "required": true}, {"type": "long", "name": "excessive_hunger", "required": true},
+    {"type": "long", "name": "extra_marital_contacts", "required": true}, {"type":
+    "long", "name": "drying_and_tingling_lips", "required": true}, {"type": "long",
+    "name": "slurred_speech", "required": true}, {"type": "long", "name": "knee_pain",
+    "required": true}, {"type": "long", "name": "hip_joint_pain", "required": true},
+    {"type": "long", "name": "muscle_weakness", "required": true}, {"type": "long",
+    "name": "stiff_neck", "required": true}, {"type": "long", "name": "swelling_joints",
+    "required": true}, {"type": "long", "name": "movement_stiffness", "required":
+    true}, {"type": "long", "name": "spinning_movements", "required": true}, {"type":
+    "long", "name": "loss_of_balance", "required": true}, {"type": "long", "name":
+    "unsteadiness", "required": true}, {"type": "long", "name": "weakness_of_one_body_side",
+    "required": true}, {"type": "long", "name": "loss_of_smell", "required": true},
+    {"type": "long", "name": "bladder_discomfort", "required": true}, {"type": "long",
+    "name": "foul_smell_of urine", "required": true}, {"type": "long", "name": "continuous_feel_of_urine",
+    "required": true}, {"type": "long", "name": "passage_of_gases", "required": true},
+    {"type": "long", "name": "internal_itching", "required": true}, {"type": "long",
+    "name": "toxic_look_(typhos)", "required": true}, {"type": "long", "name": "depression",
+    "required": true}, {"type": "long", "name": "irritability", "required": true},
+    {"type": "long", "name": "muscle_pain", "required": true}, {"type": "long", "name":
+    "altered_sensorium", "required": true}, {"type": "long", "name": "red_spots_over_body",
+    "required": true}, {"type": "long", "name": "belly_pain", "required": true}, {"type":
+    "long", "name": "abnormal_menstruation", "required": true}, {"type": "long", "name":
+    "dischromic _patches", "required": true}, {"type": "long", "name": "watering_from_eyes",
+    "required": true}, {"type": "long", "name": "increased_appetite", "required":
+    true}, {"type": "long", "name": "polyuria", "required": true}, {"type": "long",
+    "name": "family_history", "required": true}, {"type": "long", "name": "mucoid_sputum",
+    "required": true}, {"type": "long", "name": "rusty_sputum", "required": true},
+    {"type": "long", "name": "lack_of_concentration", "required": true}, {"type":
+    "long", "name": "visual_disturbances", "required": true}, {"type": "long", "name":
+    "receiving_blood_transfusion", "required": true}, {"type": "long", "name": "receiving_unsterile_injections",
+    "required": true}, {"type": "long", "name": "coma", "required": true}, {"type":
+    "long", "name": "stomach_bleeding", "required": true}, {"type": "long", "name":
+    "distention_of_abdomen", "required": true}, {"type": "long", "name": "history_of_alcohol_consumption",
+    "required": true}, {"type": "long", "name": "fluid_overload.1", "required": true},
+    {"type": "long", "name": "blood_in_sputum", "required": true}, {"type": "long",
+    "name": "prominent_veins_on_calf", "required": true}, {"type": "long", "name":
+    "palpitations", "required": true}, {"type": "long", "name": "painful_walking",
+    "required": true}, {"type": "long", "name": "pus_filled_pimples", "required":
+    true}, {"type": "long", "name": "blackheads", "required": true}, {"type": "long",
+    "name": "scurring", "required": true}, {"type": "long", "name": "skin_peeling",
+    "required": true}, {"type": "long", "name": "silver_like_dusting", "required":
+    true}, {"type": "long", "name": "small_dents_in_nails", "required": true}, {"type":
+    "long", "name": "inflammatory_nails", "required": true}, {"type": "long", "name":
+    "blister", "required": true}, {"type": "long", "name": "red_sore_around_nose",
+    "required": true}, {"type": "long", "name": "yellow_crust_ooze", "required": true}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "int32", "shape": [-1]}}]'
+  params: null
+utc_time_created: '2024-10-14 18:00:10.840172'

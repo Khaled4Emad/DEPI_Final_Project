@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Developer Info - Health Care Center</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <style>
+        body {
+            background-image: url("{{ url_for('static', filename='images/bg.png') }}");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        
+        .card-img-top {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+          <a class="navbar-brand" href="#">Health Center</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav me-auto">
+                  <li class="nav-item">
+                      <a class="nav-link" href="/">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="/about">About</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="/contact">Contact</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="/developer">Developer</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="/blog">Blog</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+    </nav>
+
+    <!-- Developer Info Content -->
+    <div class="container my-5">
+        <h1 class="text-center text-success mb-4">Meet Our Developers</h1>
+        <p class="lead text-center mb-5">Get to know the amazing team behind the Health Care Center's AI technology.</p>
+
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <!-- Developer Card 1 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="{{ url_for('static', filename='images/eldaba.jpg') }}" class="card-img-top" alt="Abdelrahman Eldaba">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Abdelrahman Eldaba</h5>
+                        <p class="card-text">Data Specialist</p>
+                        <a href="https://linkedin.com/in/abdelrahmaneldaba" class="btn btn-info">LinkedIn Profile</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Developer Card 2 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="{{ url_for('static', filename='images/yasser.jpg') }}" class="card-img-top" alt="Developer Name">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Mohammed Yasser</h5>
+                        <p class="card-text">ML Engineer</p>
+                        <a href="http://www.linkedin.com/in/mohamed-dawaba-865074263" class="btn btn-info">LinkedIn Profile</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Developer Card 3 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="{{ url_for('static', filename='images/khaled.jpg') }}" class="card-img-top" alt="Developer Name">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Khaled Emad</h5>
+                        <p class="card-text">ML Engineer</p>
+                        <a href="http://www.linkedin.com/in/khaled-emad-397751261" class="btn btn-info">LinkedIn Profile</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Developer Card 4 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="{{ url_for('static', filename='images/rabiee.jpg') }}" class="card-img-top" alt="Developer Name">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Mohamed Rabiee</h5>
+                        <p class="card-text">ML Engineer</p>
+                        <a href="https://www.linkedin.com/in/mohamed-rabie-6247862b6/" class="btn btn-info">LinkedIn Profile</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Developer Card 5 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="{{ url_for('static', filename='images/refaat.jpg') }}" class="card-img-top" alt="Developer Name">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Refeat-Allah Elgohary</h5>
+                        <p class="card-text">ML Engineer</p>
+                        <a href="https://www.linkedin.com/in/refaat-elgohary-07b94b2a3/" class="btn btn-info">LinkedIn Profile</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-center text-white py-3 mt-5">
+      <p>&copy; 2024 Health Care Center | All Rights Reserved</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
